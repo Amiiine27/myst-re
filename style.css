@@ -52,12 +52,12 @@
         border-radius: 8px;
         padding: 10px 25px;
         font-size: 13px;
-        margin-left: 20px;
+        margin-left: 50px;
         background-color: rgb(255, 255, 255, 0.8);
     }
 
     .oui {
-        margin-left: 16px;
+        margin-left: 80px;
         position: relative;
         padding: 10px 25px;
         background: transparent;
@@ -234,7 +234,7 @@
     }
     
     .overlay img {
-        margin-top: 50vh;
+        margin-top: 40vh;
         max-width: 100%;
     }
 
