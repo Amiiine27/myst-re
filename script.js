@@ -53,6 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     const ouiButton = document.querySelector('.oui');
     const overlay = document.getElementById('overlay');
+    overlay.style.display = 'none';
     
     overlay.addEventListener('click', function() {
         overlay.style.display = 'none'; // Cache l'overlay
