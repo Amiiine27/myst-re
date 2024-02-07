@@ -58,14 +58,15 @@ document.addEventListener('DOMContentLoaded', function() {
         overlay.style.display = 'none'; // Cache l'overlay
     });
 
-    ouiButton.addEventListener('click', function() {
+    ouiButton.addEventListener('click', function(event) {
+        event.stopPropagation(); // Empêche la propagation du clic vers l'overlay
         overlay.style.display = 'block'; // Affiche l'overlay
-        
-        // Empêche le clic sur l'image de fermer l'overlay
-        overlay.addEventListener('click', function(event) {
-            event.stopPropagation();
-        });
     });
 
+    // Empêche le clic sur l'image de fermer l'overlay
+    overlay.addEventListener('click', function(event) {
+        event.stopPropagation();
+    });
 });
+
 
