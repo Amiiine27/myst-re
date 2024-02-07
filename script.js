@@ -53,6 +53,10 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     const ouiButton = document.querySelector('.oui');
     const overlay = document.getElementById('overlay');
+    
+    overlay.addEventListener('click', function() {
+        overlay.style.display = 'none'; // Cache l'overlay
+    });
 
     ouiButton.addEventListener('click', function() {
         overlay.style.display = 'block'; // Affiche l'overlay
@@ -63,8 +67,5 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    overlay.addEventListener('click', function() {
-        overlay.style.display = 'none'; // Cache l'overlay
-    });
 });
 
