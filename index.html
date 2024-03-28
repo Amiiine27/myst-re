@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site privé</title>
     <link rel="stylesheet" href="verif.css">
-    <script src="verif.js"></script>
 
 </head>
 <body>
@@ -27,56 +26,5 @@
     <img src="assets/refuse.png" alt="" style="display: none;" class="refuse">
 </body>
 
-<script>
-/* document.getElementById("validate").addEventListener("click", function(event) {
-    event.preventDefault(); // Empêche le formulaire de se soumettre
-
-    var prenomInput = document.getElementById("prenom");
-    var prenom = prenomInput.value.trim().toLowerCase(); // Récupère et nettoie le texte de l'input
-
-    if (prenom === "rosa" || prenom === "flore") {
-        alert("ok")
-        // Rediriger vers acces.html si le prénom est "rosa"
-        //window.location.href = "acces.html";
-    } else {
-        alert("non");
-        // Afficher l'overlay si le prénom n'est pas "rosa"
-        //var overlay = document.querySelector(".overlay");
-        //overlay.style.display = "block";
-    }
-}); */
-
-document.getElementById("validate").addEventListener("click", validate);
-        document.getElementById("prenom").addEventListener("keypress", function(event) {
-            if (event.key === "Enter") {
-                event.preventDefault(); // Empêche le formulaire de se soumettre
-                validate();
-            }
-        });
-
-        function validate() {
-        var prenomInput = document.getElementById("prenom");
-        var prenom = prenomInput.value.trim().toLowerCase(); // Récupère et nettoie le texte de l'input, et le convertit en minuscules
-        var autorise = document.querySelector(".autorise");
-        var content = document.querySelector(".content");
-        var refuse = document.querySelector(".refuse");
-        var refuse = document.querySelector(".refuse");
-        if (prenom === "rosa" || prenom === "flore") {
-            content.style.display = "none";
-            autorise.style.display = "block";
-            
-            // Rediriger vers acces.html après 5 secondes
-            setTimeout(function() {
-                window.location.href = "acces.html";
-            }, 1500);
-        } else {
-            refuse.style.display = "block";
-            content.style.display = "none";
-            // Rediriger vers index.html après 3 secondes
-            setTimeout(function() {
-                window.location.href = "index.html";
-            }, 1200);
-    }
-}
-</script>
+<script src="verif.js"></script>
 </html>

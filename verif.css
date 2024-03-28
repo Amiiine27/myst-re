@@ -1,5 +1,5 @@
 .content{
-    margin-top: 380px;
+    margin-top: 50%;
 }
 
 .titre{
@@ -35,7 +35,13 @@
     margin: auto;
 }
 
-.autorise, .refuse{
+.autorise{
+    padding-top: 45%;
+    padding-left: 20px;
+    width: 90%;
+}
+
+.refuse{
     padding-top: 45%;
     width: 100%;
 }
