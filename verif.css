@@ -1,0 +1,41 @@
+.content{
+    margin-top: 380px;
+}
+
+.titre{
+    text-align: center;
+}
+
+.verif{
+    text-align: center;
+}
+
+.verif input{
+    width: 200px;
+    text-align: center;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding-bottom: 5px;
+    outline: none;
+}
+
+.verif input::placeholder{
+    text-align: center;
+}
+
+.verif button{
+    margin-top: 10px;
+}
+
+.buttons{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.autorise, .refuse{
+    padding-top: 45%;
+    width: 100%;
+}
